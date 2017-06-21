@@ -1,0 +1,652 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------首頁-----------------------------*/
+body{
+	background-color: #E0E0E0;
+}
+
+.wrap{
+	margin: 0 auto;
+	font-family: 微軟正黑體;
+}
+
+.header{
+	height: 130px;
+	padding: 10px 0px;
+	background-color: #AAFFEE;
+}
+
+.content{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1{
+	max-width: 900px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;	
+	font-size: 68px;
+	font-weight: bold;
+	color: 	#007799;
+	white-space: nowrap;
+}
+
+.header a{
+	display: block;
+	float: left;
+}
+
+.header img{	
+	max-width: 100px;	
+}
+
+.showData{
+	position: relative;
+	left: 650px;
+	margin-top: 18px;
+	padding: 10px;
+	border: 1px solid #00DD77;
+	border-radius: 10px;
+	background-color: #00DD77;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	white-space: nowrap;
+	-webkit-appearance: none;
+}
+
+.showData:hover{
+	border: 1px solid #008844;
+	background-color: #008844;
+	color: white;
+}
+
+form{
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+#choose{
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #007799;
+}
+
+select{
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 8px 20px;
+}
+
+.submit{
+	padding: 7px;
+	font-size: 16px;
+	-webkit-appearance: none;
+}
+
+.show{
+	margin-top: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
+.show li{
+	float: left;
+	margin: 8px;
+	padding: 10px;
+	padding-bottom: 15px;
+	border: 2px solid #007799;
+	text-align: center;
+	width: 280px;
+	height: 300px;	
+	color: #008800;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#line{
+	border-bottom: 2px dashed #007799;
+	margin: 10px auto; 
+}
+
+#result_img{
+	max-width: 250px;
+	height: 200px;
+}
+
+#result_name {
+	font-size: 18px;
+	text-align: center;	
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#result_place{
+	font-size: 16px;
+	text-align: center;
+}
+
+.unfind{
+	max-width: 300px;
+	padding-top: 100px;
+	padding-left: 350px;
+}
+
+/*-----------------------------首頁-----------------------------*/
+/*-----------------------------detail-----------------------------*/
+
+.back{
+	position: relative;
+	margin-left: 630px;
+	margin-top: 18px;
+	padding: 10px;
+	border: 1px solid #00DD77;
+	border-radius: 10px;
+	background-color: #00DD77;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	white-space: nowrap;
+	-webkit-appearance: none;
+}
+
+.back:hover{
+	border: 1px solid #008844;
+	background-color: #008844;
+	color: white;
+}
+
+#show1{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#show1 li{
+	margin: 10px auto;
+	padding: 10px;
+	border: 2px solid #007799;
+	width: 700px;
+	height: auto;	
+	color: #008800; 
+}
+
+.Image{
+	max-width: 500px;
+	margin-bottom: 10px;
+	padding-left: 15%;
+}
+
+.Name{
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.Author, .Year, .Size, .Type, .Material, .Place, .Funds, .Unit, .Method, .ActTeam, .SelectTeam, .Desc{
+	font-size: 22px;
+	padding-bottom: 5px;
+	letter-spacing: 5px;
+}
+
+#map{
+	max-width: 40px;
+	padding-left: 8px;
+}
+
+/*-----------------------------detail-----------------------------*/
+
+/* -----------------------------RWD css----------------------------- */
+@media(max-width: 768px){
+.slider-img{
+	display: none;
+}
+
+.header{
+	height: 80px;
+	padding: 10px 0px;
+}
+
+.content{
+	max-width: 90%;
+}
+
+h1{
+	max-width: 60%;
+	margin: 0 auto;
+	padding-top: 8px;
+	font-size: 35px;
+}
+
+.header img{	
+	max-width: 40px;
+}
+
+.showData{
+	left: 40%;
+	margin-top: 8px;
+	padding: 8px;
+	font-size: 12px;
+}
+
+form{
+	max-width: 60%;
+}
+
+#choose{
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+select{
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 5px 15px;
+}
+
+.submit{
+	padding: 4px;
+	font-size: 14px;
+}
+
+.show{
+	max-width: 92%;
+	margin-top: 5px auto;
+}
+
+.show li{
+	margin: 6px;
+	padding: 8px;
+	max-width: 280px;
+	height: 290px;	
+}
+
+#line{
+	margin: 7px auto; 
+}
+
+#result_img{
+	max-width: 80%;
+	height: 190px;
+}
+
+#result_name {
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+
+#result_place{
+	font-size: 14px;
+}
+
+.unfind{
+	max-width: 50%;
+	padding-top: 70px;
+	padding-left: 25%;
+}
+
+.back{
+	left: -5%;
+	margin-top: -5px;
+	padding: 8px;
+	font-size: 12px;
+}
+
+#show1{
+	max-width: 95%;
+}
+
+#show1 li{
+	margin: 10px auto;
+	padding: 10px;
+	max-width: 600px;
+}
+
+.Image{
+	max-width: 80%;
+	padding-left: 10%;
+}
+
+.Name{
+	font-size: 18px;
+}
+
+.Author, .Year, .Size, .Type, .Material, .Place, .Funds, .Unit, .Method, .ActTeam, .SelectTeam, .Desc{
+	font-size: 16px;
+}
+
+#map{
+	max-width: 6%;
+	padding-left: 6px;
+}
+}
+
+@media(max-width: 414px){
+.header{
+	height: 70px;
+	padding: 10px 0px;
+}
+
+.content{
+	max-width: 90%;
+}
+
+h1{
+	max-width: 98%;
+	margin: 0 auto;
+	padding-top: 8px;
+	font-size: 28px;
+}
+
+.showData{
+	position: relative;
+	left: 40%;
+	margin-top: 8px;
+	padding: 6px;
+	font-size: 10px;
+}
+
+form{
+	max-width: 100%;
+	margin-top: 5px;
+}
+
+#choose{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+select{
+	font-size: 14px;
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.submit{
+	padding: 4px;
+	font-size: 12px;
+}
+
+.show{
+	max-width: 85%;
+	margin-top: 5px auto;
+}
+
+.show li{
+	margin: 6px auto;
+	padding: 8px;
+	max-width: 100%;
+	height: 290px;	
+}
+
+#line{
+	margin: 7px auto; 
+}
+
+#result_img{
+	max-width: 90%;
+	height: 190px;
+}
+
+.back{
+	position: relative;
+	left: -90%;
+	margin-top: -15px;
+	padding: 8px;
+	font-size: 10px;
+}
+
+#show1{
+	max-width: 98%;
+}
+
+#show1 li{
+	margin: 6px auto;
+	padding: 8px;
+	max-width: 92%;
+}
+
+.Image{
+	max-width: 90%;
+	padding-left: 5%;
+}
+
+.Name{
+	font-size: 16px;
+}
+
+.Author, .Year, .Size, .Type, .Material, .Place, .Funds, .Unit, .Method, .ActTeam, .SelectTeam, .Desc{
+	font-size: 14px;
+}
+
+#map{
+	max-width: 8%;
+	padding-left: 6px;
+}
+}
+
+@media(max-width: 320px){
+.header{
+	height: 65px;
+	padding: 10px 0px;
+}
+
+.content{
+	max-width: 95%;
+}
+
+h1{
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 8px;
+	font-size: 25px;
+}
+
+.showData{
+	position: relative;
+	left: 35%;
+	margin-top: 8px;
+	padding: 6px;
+	font-size: 10px;
+}
+
+form{
+	max-width: 95%;
+	margin-top: 5px;
+}
+
+#choose{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+select{
+	font-size: 14px;
+	margin-top: 8px;
+	padding: 5px 8px;
+}
+
+.submit{
+	padding: 4px;
+	font-size: 13px;
+}
+
+.show{
+	max-width: 95%;
+	margin-top: 5px auto;
+}
+
+.show li{
+	margin: 6px;
+	padding: 8px;
+	max-width: 90%;
+	height: 290px;	
+}
+
+#line{
+	margin: 5px auto; 
+}
+
+#result_img{
+	max-width: 90%;
+	height: 190px;
+}
+
+.back{
+	position: relative;
+	left: -120%;
+	margin-top: -16px;
+	padding: 6px;
+	font-size: 10px;
+}
+
+#show1{
+	max-width: 98%;
+}
+
+#show1 li{
+	margin: 4px auto;
+	padding: 8px;
+	max-width: 95%;
+}
+
+.Image{
+	max-width: 95%;
+	padding-left: 2%;
+}
+
+.Name{
+	font-size: 14px;
+}
+
+.Author, .Year, .Size, .Type, .Material, .Place, .Funds, .Unit, .Method, .ActTeam, .SelectTeam, .Desc{
+	font-size: 12px;
+}
+
+#map{
+	max-width: 6%;
+	padding-left: 4px;
+}
+}
+
+/* -----------------------------圖片輪播css----------------------------- */
+
+.slider ul, .slider li {
+	margin: 0;
+	padding: 0;
+	list-style: none;  
+}
+ 
+a img {
+	border: none;
+}
+
+.slider-img{
+	margin-top: 12px;
+	padding-left: 100px;
+	width: 920px;	/* 框架圖片的寬 */
+	height: 410px;	/* 框架圖片的高 */
+	position: relative;
+	float: left;	
+}
+
+.slider-img img{
+	max-width: 90%;
+	max-height: 360px;	
+}
+
+.slider-img a.prev, .slider-img a.next {
+	position: absolute;
+	top: 150px;
+	display: block;
+	width: 80px;	/* 左右鈕圖片的寬 */
+	height: 50px;	/* 左右鈕圖片的高 */
+	text-indent: -9999px;
+}
+ 
+.slider-img .prev {
+	background: url('images/left.png') no-repeat;
+	background-size:contain;
+	left: 80px;
+}
+ 
+.slider-img .next {
+	background: url('images/right.png') no-repeat;
+	background-size:contain;
+	right: 10px;
+}
+
+
+.slider-img .slides {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	top: 10px;	
+	width: 950px;	/* 框架中間區塊的寬 */
+	height: 100%;	/* 框架中間區塊的高 */
+}
+
+.slides ul {
+	position: absolute;
+	width: 9990px;
+	height: 100%;
+}
+
+.slides li {
+	text-align: center;
+	width: 960px;
+	height: 100%;
+	float: left;
+}
+
+/* -----------------------------圖片輪播css----------------------------- */
